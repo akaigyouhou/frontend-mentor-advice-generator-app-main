@@ -1,0 +1,48 @@
+.card {
+    margin: auto;
+    text-align: center;
+    background-color: var(--Dark-Grayish-Blue);
+    width: 21.5em;
+    margin-top: 7.5em;
+    padding-top: 2.5em;
+    padding-left: 1.7em;
+    padding-right: 1.7em;
+    padding-bottom: 2.7em;
+    border-radius: 10px;
+    position: relative;
+}
+
+.title {
+    color: var(--Neon-Green);
+    font-size: .7em;
+    letter-spacing: 0.25em;
+    padding-bottom: 2em;
+}
+
+.title__advice {
+    margin-right: 0.5em;
+}
+
+.sentence {
+    color: var(--Light-Cyan);
+    font-size: 1.46em;
+    line-height: 1.43;
+    padding-bottom: 0.95em;
+}
+
+.divider {
+    margin-bottom: 1em;
+    position: relative;
+    right: 0.2em;
+}
+
+.button {
+    position: absolute;
+    background-color: var(--Neon-Green);
+    display: flex;
+    padding: 1.25em;
+    border-radius: 50%;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
