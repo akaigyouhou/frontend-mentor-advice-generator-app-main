@@ -10,9 +10,7 @@ const Card = () => {
 
     let allowClick = true;
 
-
     const handleClick = () => {
-        console.log(allowClick);
         if (allowClick) {
             allowClick = false;
             fetch("https://api.adviceslip.com/advice").then(res => res.json()).then(result => {
