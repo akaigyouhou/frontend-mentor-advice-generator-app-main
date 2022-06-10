@@ -1,39 +1,43 @@
 .card {
-    margin: auto;
     text-align: center;
     background-color: var(--Dark-Grayish-Blue);
     width: 21.5em;
-    margin-top: 7.5em;
-    padding-top: 2.5em;
-    padding-left: 1.7em;
-    padding-right: 1.7em;
-    padding-bottom: 2.7em;
+    margin-bottom: 7em;
+    padding: 2.5em 1.7em 2.7em;
     border-radius: 10px;
     position: relative;
 }
 
-.title {
+.ident {
     color: var(--Neon-Green);
     font-size: .7em;
-    letter-spacing: 0.25em;
-    padding-bottom: 2em;
+    letter-spacing: .25em;
+    margin-bottom: 2em;
 }
 
-.title__advice {
-    margin-right: 0.5em;
+.ident__advice {
+    margin-right: .5em;
 }
 
 .sentence {
     color: var(--Light-Cyan);
     font-size: 1.46em;
     line-height: 1.43;
-    padding-bottom: 0.95em;
+    margin-bottom: .95em;
+    /* quotes: "“" "”"; */
+    /* quotes: auto; */
+}
+
+.quotes {
+    quotes: '“' '”'
 }
 
 .divider {
-    margin-bottom: 1em;
+    margin-bottom: 1.3em;
     position: relative;
-    right: 0.2em;
+    right: .2em;
+    background-image: url("../images/pattern-divider-mobile.svg");
+    height: 1em;
 }
 
 .button {
@@ -45,4 +49,38 @@
     top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+
+@media (min-width: 800px) {
+    .card {
+        width: 33.8em;
+        padding-top: 2.95em;
+        padding-left: 3em;
+        padding-right: 3em;
+        margin-bottom: 2em;
+        border-radius: 15px;
+    }
+
+    .ident {
+        font-size: .87em;
+        margin-bottom: 1.75em;
+    }
+
+    .sentence {
+        font-size: 1.7em;
+        line-height: 1.4;
+        margin-bottom: 1.45em;
+    }
+
+    .divider {
+        right: 0;
+        background-image: url("../images/pattern-divider-desktop.svg");
+        margin-bottom: 1.8em;
+    }
+
+    .button:hover {
+        box-shadow: 0px 0px 35px 0 var(--Neon-Green);
+    }
 }
